@@ -10,7 +10,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 0
+  number: 1
   run_exports:
     - {{ pin_subpackage("azure-identity-cpp", max_pin="x") }}
 
@@ -21,8 +21,7 @@ requirements:
     - cmake
     - ninja
   host:
-    # requires azure-core-cpp >=1.9.0
-    - azure-core-cpp
+    - azure-core-cpp >=1.9.0
     - openssl
 
 test:
