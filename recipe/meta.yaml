@@ -1,5 +1,5 @@
-{% set version = "1.5.1" %}
-{% set sha256 = "651a660592540c267420b7e1c8dc98428a17396e45f7f6c92a864ab9a4fa028a" %}
+{% set version = "1.6.0" %}
+{% set sha256 = "c37558d13752025db7cc4011d3d1df25973e5802cc1fbbe5c5bce3009c88b578" %}
 
 package:
   name: azure-identity-cpp
@@ -10,7 +10,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1
+  number: 0
   run_exports:
     - {{ pin_subpackage("azure-identity-cpp", max_pin="x") }}
 
@@ -53,10 +53,7 @@ about:
   home: https://github.com/Azure/azure-sdk-for-cpp/
   summary: Azure Identity client library for C++
   description: >-
-    The Azure Identity library provides Azure Active Directory token
-    authentication support across the Azure SDK. It provides a set of
-    `TokenCredential` implementations which can be used to construct Azure SDK
-    clients which support AAD token authentication.
+    The Azure Identity library provides Azure Active Directory token authentication support across the Azure SDK. It provides a set of `TokenCredential` implementations which can be used to construct Azure SDK clients which support AAD token authentication.
   license: MIT
   license_family: MIT
   license_file:
