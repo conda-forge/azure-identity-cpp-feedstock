@@ -103,17 +103,10 @@ Current build status
                 </a>
               </td>
             </tr><tr>
-              <td>win_64_openssl1.1.1</td>
+              <td>win_64</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=20085&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/azure-identity-cpp-feedstock?branchName=main&jobName=win&configuration=win%20win_64_openssl1.1.1" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>win_64_openssl3</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=20085&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/azure-identity-cpp-feedstock?branchName=main&jobName=win&configuration=win%20win_64_openssl3" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/azure-identity-cpp-feedstock?branchName=main&jobName=win&configuration=win%20win_64_" alt="variant">
                 </a>
               </td>
             </tr>
@@ -248,4 +241,5 @@ Feedstock Maintainers
 * [@Shelnutt2](https://github.com/Shelnutt2/)
 * [@jdblischak](https://github.com/jdblischak/)
 * [@jjerphan](https://github.com/jjerphan/)
+* [@teo-tsirpanis](https://github.com/teo-tsirpanis/)
 
