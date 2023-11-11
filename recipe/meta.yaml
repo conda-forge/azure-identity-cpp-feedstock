@@ -22,7 +22,8 @@ requirements:
     - ninja
   host:
     - azure-core-cpp >=1.9.0
-    - openssl
+    - openssl  # [not win]
+    - wil  # [win]
 
 test:
   requires:
