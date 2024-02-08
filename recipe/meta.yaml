@@ -13,9 +13,9 @@ source:
     - 0001-remove-wil-from-exported-config.patch
 
 build:
-  number: 0
+  number: 1
   run_exports:
-    - {{ pin_subpackage("azure-identity-cpp", max_pin="x") }}
+    - {{ pin_subpackage("azure-identity-cpp", max_pin="x.x.x") }}
 
 # https://github.com/Azure/azure-sdk-for-cpp/blob/main/sdk/identity/azure-identity/vcpkg/vcpkg.json
 requirements:
@@ -42,7 +42,7 @@ test:
     - if not exist %LIBRARY_LIB%\azure-identity.lib exit 1  # [win]
 
     # headers
-    - test -f ${PREFIX}/include/azure/identity.hpp    # [unix]
+    - test -f ${PREFIX}/include/azure/identity.hpp          # [unix]
     - if not exist %LIBRARY_INC%\azure\identity.hpp exit 1  # [win]
 
     # CMake metadata
