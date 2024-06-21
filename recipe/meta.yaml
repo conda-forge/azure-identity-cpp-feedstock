@@ -13,7 +13,7 @@ source:
     - 0001-remove-wil-from-exported-config.patch
 
 build:
-  number: 0
+  number: 1
   run_exports:
     - {{ pin_subpackage("azure-identity-cpp", max_pin="x.x.x") }}
 
@@ -25,7 +25,8 @@ requirements:
     - cmake
     - ninja
   host:
-    - azure-core-cpp >=1.9.0
+    # azure-core-cpp is pinned in conda-forge-pinning-feedstock
+    - azure-core-cpp
     - openssl  # [not win]
     - wil  # [win]
 
