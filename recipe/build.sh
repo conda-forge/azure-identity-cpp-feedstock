@@ -22,5 +22,6 @@ cmake $CMAKE_ARGS \
   -G Ninja \
   -D BUILD_SHARED_LIBS=ON \
   -D BUILD_TRANSPORT_CURL=ON \
+  -D CMAKE_POLICY_VERSION_MINIMUM=3.5 \
   ..
 cmake --build . --target install --config Release
