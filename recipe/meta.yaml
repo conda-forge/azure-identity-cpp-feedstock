@@ -1,5 +1,5 @@
-{% set version = "1.13.0" %}
-{% set sha256 = "a18ce70f8da11266b6a1aec3c02233ca889ea6137471a9f633131f00dfd386c0" %}
+{% set version = "1.13.2" %}
+{% set sha256 = "c057adbe6d2f046561f848ef8f33c110781739653575a411de828f726d8dc051" %}
 
 package:
   name: azure-identity-cpp
