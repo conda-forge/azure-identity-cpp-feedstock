@@ -1,5 +1,5 @@
 azure_core_cpp:
-- 1.16.0
+- 1.16.1
 c_stdlib:
 - sysroot
 c_stdlib_version:
@@ -15,6 +15,6 @@ cxx_compiler_version:
 docker_image:
 - quay.io/condaforge/linux-anvil-x86_64:alma9
 openssl:
-- '3'
+- '3.5'
 target_platform:
 - linux-64
