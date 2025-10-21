@@ -1,5 +1,5 @@
 azure_core_cpp:
-- 1.16.0
+- 1.16.1
 c_stdlib:
 - vs
 channel_sources:
