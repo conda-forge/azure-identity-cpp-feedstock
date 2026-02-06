@@ -13,7 +13,7 @@ source:
     - 0001-remove-wil-from-exported-config.patch
 
 build:
-  number: 0
+  number: 1
   run_exports:
     - {{ pin_subpackage("azure-identity-cpp", max_pin="x.x.x") }}
 
@@ -28,7 +28,9 @@ requirements:
     # azure-core-cpp is pinned in conda-forge-pinning-feedstock
     - azure-core-cpp
     - openssl  # [not win]
-    - wil  # [win]
+    # Pin to earlier version until C++14 incompatibility is fixed.
+    # Ref: https://github.com/microsoft/wil/pull/615
+    - wil ==1.0.240803.1   # [win]
 
 test:
   requires:
