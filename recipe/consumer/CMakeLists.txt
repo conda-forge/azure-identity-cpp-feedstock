@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 3.20)
+project(azure_identity_consumer LANGUAGES CXX)
+find_package(azure-identity-cpp CONFIG REQUIRED)
+add_executable(azure_identity_consumer main.cpp)
+target_link_libraries(azure_identity_consumer PRIVATE Azure::azure-identity)
