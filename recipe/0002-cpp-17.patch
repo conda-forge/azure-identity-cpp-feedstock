@@ -1,0 +1,26 @@
+diff --git a/sdk/identity/azure-identity/CMakeLists.txt b/sdk/identity/azure-identity/CMakeLists.txt
+index 2cd8243..238f931 100644
+--- a/sdk/identity/azure-identity/CMakeLists.txt
++++ b/sdk/identity/azure-identity/CMakeLists.txt
+@@ -9,7 +9,7 @@ az_vcpkg_integrate()
+ cmake_minimum_required (VERSION 3.13)
+ project(azure-identity LANGUAGES CXX)
+ 
+-set(CMAKE_CXX_STANDARD 14)
++set(CMAKE_CXX_STANDARD 17)
+ set(CMAKE_CXX_STANDARD_REQUIRED True)
+ set(CMAKE_WINDOWS_EXPORT_ALL_SYMBOLS ON)
+ # Compile Options
+diff --git a/sdk/identity/CMakeLists.txt b/sdk/identity/CMakeLists.txt
+index 64f8911..c23b4a0 100644
+--- a/sdk/identity/CMakeLists.txt
++++ b/sdk/identity/CMakeLists.txt
+@@ -4,7 +4,7 @@
+ cmake_minimum_required (VERSION 3.13)
+ 
+ project (azure-identity LANGUAGES CXX)
+-set(CMAKE_CXX_STANDARD 14)
++set(CMAKE_CXX_STANDARD 17)
+ set(CMAKE_CXX_STANDARD_REQUIRED ON)
+ set(CMAKE_WINDOWS_EXPORT_ALL_SYMBOLS ON)
+ 
